@@ -3,7 +3,7 @@ let PredictionList = [
 
   {
     "Prediction": "Mare's promotion to Executive Producer",
-    "Reason": "Mare is the highest non-administrator serving at the Club Penguin Armies league. She is not affiliated and has taken up high positions at CPA and CPAJ. Therefore, it is not unlikely that she is the next Executive Producer.",
+    "Reason": "Mare is the highest non-administrator serving at the Club Penguin Armies league. She is not affiliated and has taken up high positions at CPA and CPAJ. Therefore, it is not unlikely that she is the next Executive Producer. There does not seem to be any other good fit who has matched wisdom.",
     "PredictedFor": "After Legends Cup XIV",
     "PredictedOn": "July 16, 2024",
     "Predictor": "Fun X Time",

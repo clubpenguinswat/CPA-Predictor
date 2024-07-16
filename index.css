@@ -30,6 +30,14 @@ th, td {
   padding: 5px;
 }
 
+th {
+  background: #00000020;
+}
+
 td.Prediction {
   cursor: help;
+}
+
+td.Prediction:hover {
+  background: #00000010;
 }
