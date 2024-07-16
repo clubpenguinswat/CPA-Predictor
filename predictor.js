@@ -1,5 +1,13 @@
-
 let PredictionList = [
+
+  {
+    "Prediction": "Secret Service upgrades to Major",
+    "Reason": "The Secret Service has been consistently acquiring sizes of over 20, up to almost 40. It is almost undoubted that SS will upgrade to Major after meeting the requirements.",
+    "PredictedFor": "July 21, 2024",
+    "PredictedOn": "July 16, 2024",
+    "Predictor": "Fun X Time",
+    "Status": "Waiting to be proved"
+  },
 
   {
     "Prediction": "Mare's promotion to Executive Producer",
