@@ -34,10 +34,38 @@ th {
   background: #00000020;
 }
 
-td.Prediction {
+td.Prediction,
+td.Predictor {
   cursor: help;
 }
 
-td.Prediction:hover {
+td.Prediction:hover,
+td.Predictor:hover {
   background: #00000010;
+}
+
+.Meters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Meters div {
+  background: #00000010;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.Meters div :first-child {
+  font-size: 32px;
+  font-family: 'Unbounded';
+  font-weight: 900;
+}
+
+.Meters div :last-child {
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -1,6 +1,15 @@
 let PredictionList = [
 
   {
+    "Prediction": "TCP declares war on PIC, and Shallissa departs from PIC",
+    "Reason": "The Templars recently attempted to invade People's Imperial Confederation's Migrator. It appears that the relationships are on the brink of its end due to leaders separated between the armies. Shallissa is close to inactivity, too. The Templars leadership seem to have an internal conflict upon deciding this, looking at Jojo Teri's recent messages. Shallissa may leave the Confederation to join the Templars.",
+    "PredictedFor": "Within 2 weeks",
+    "PredictedOn": "July 16, 2024",
+    "Predictor": "Fwapo",
+    "Status": "Waiting to be proved"
+  },
+
+  {
     "Prediction": "Secret Service upgrades to Major",
     "Reason": "The Secret Service has been consistently acquiring sizes of over 20, up to almost 40. It is almost undoubted that SS will upgrade to Major after meeting the requirements.",
     "PredictedFor": "July 21, 2024",
@@ -44,7 +53,13 @@ function ShowPredictions(Predictions) {
         </td>
         <td class="PredictedFor">${Prediction.PredictedFor}</td>
         <td class="PredictedOn">${Prediction.PredictedOn}</td>
-        <td class="Predictor">${Prediction.Predictor}</td>
+        <td
+          class="Predictor"
+          title="User details"
+          onclick='alert("${Prediction.Predictor} has predicted ${Prediction.Predictor.PredictionCount} times. Their accuracy is ${Prediction.Predictor.Accuracy}%.")'
+        >
+        ${Prediction.Predictor}
+        </td>
         <td class="Status">${Prediction.Status}</td>
       </tr>
     `);
@@ -52,4 +67,29 @@ function ShowPredictions(Predictions) {
   });
 };
 
+function SetMeters(Predictions) {
+  let Total = Predictions.length;
+  let Proven = 0;
+  let Accuracy = {
+    Accurate: 0,
+    Inaccurate: 0
+  };
+
+  Predictions.forEach(Prediction => {
+    if (Prediction.Status == `Proved`) {
+      Accuracy.Accurate += 1;
+      Proven += 1;
+    } else if (Prediction.Status == `Proved False`) {
+      Accuracy.Inaccurate += 1;
+    }
+  });
+
+  Accuracy.Score = (Accuracy.Accurate / (Accuracy.Accurate + Accuracy.Inaccurate)) * 100 || 0;
+
+  document.querySelector(`#AccuracyMeter`).innerHTML = `${Accuracy.Score}%`;
+  document.querySelector(`#PredictionsMeter`).innerHTML = `${Total}`;
+  document.querySelector(`#ProvenMeter`).innerHTML = `${Proven}`;
+};
+
 ShowPredictions(PredictionList);
+SetMeters(PredictionList);
