@@ -38,6 +38,14 @@ let PredictionList = [
 
 ];
 
+function Supertransform(Content) {
+  return Content.replaceAll(`'`, `[*APOSTROPHE]`);
+}
+
+function Superoriginate(Content) {
+  return Content.replaceAll(`[*APOSTROPHE]`, `'`);
+}
+
 function ShowPredictions(Predictions) {
   let Count = Predictions.length;
   Predictions.forEach(Prediction => {
@@ -47,7 +55,7 @@ function ShowPredictions(Predictions) {
         <td
           class="Prediction"
           title="${Prediction.Reason}"
-          onclick='alert("${Prediction.Reason}")'
+          onclick="ShowModal('${Supertransform(Prediction.Reason)}')"
         >
         ${Prediction.Prediction}
         </td>
@@ -66,6 +74,10 @@ function ShowPredictions(Predictions) {
     Count -= 1;
   });
 };
+
+function ShowModal(Content) {
+  alert(Superoriginate(Content));
+}
 
 function SetMeters(Predictions) {
   let Total = Predictions.length;
