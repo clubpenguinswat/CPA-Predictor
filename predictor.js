@@ -12,7 +12,7 @@ let PredictionList = [
   {
     "Prediction": "Secret Service upgrades to Major",
     "Reason": "The Secret Service has been consistently acquiring sizes of over 20, up to almost 40. It is almost undoubted that SS will upgrade to Major after meeting the requirements.",
-    "PredictedFor": "July 21, 2024",
+    "PredictedFor": "August 4, 2024",
     "PredictedOn": "July 16, 2024",
     "Predictor": "Fun X Time",
     "Status": "Waiting to be proved"
@@ -20,7 +20,7 @@ let PredictionList = [
 
   {
     "Prediction": "Mare's promotion to Executive Producer",
-    "Reason": "Mare is the highest non-administrator serving at the Club Penguin Armies league. She is not affiliated and has taken up high positions at CPA and CPAJ. Therefore, it is not unlikely that she is the next Executive Producer. There does not seem to be any other good fit who has matched wisdom.",
+    "Reason": "Mare is the highest non-administrator serving at the Club Penguin Armies league. She is not affiliated and has taken up high positions at CPA and CPAJ. Therefore, it is not unlikely that she is the next Executive Producer. There does not seem to be any other good fit who has matched her wisdom.",
     "PredictedFor": "After Mchappy's Retirement",
     "PredictedOn": "July 16, 2024",
     "Predictor": "Fun X Time",
